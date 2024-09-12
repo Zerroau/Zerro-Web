@@ -27,20 +27,20 @@ const Footer = () => {
             <span className="text-lg font-bold">Follow us on social media</span>
 
             <div className="flex flex-row gap-[15px]">
-              <a href="#" className="text-lg text-white flex">
-                <i className="linkedin-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="lnkedin-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="facebook-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="fb-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="twitter-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="x-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="instagram-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="insta-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="youtube-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="yt-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
             </div>
           </div>
@@ -66,26 +66,26 @@ const Footer = () => {
             Subscribe
           </Button>
 
-          <div className="flex flex-col items-center justify-center w-full mt-[54px] gap-2.5 lg::hidden">
+          <div className="flex flex-col items-center justify-center w-full mt-[54px] gap-2.5 lg:hidden">
             <span className="text-lg max-lg:text-sm font-bold text-center">
               Follow us on social media
             </span>
 
             <div className="flex flex-row gap-[15px]">
-              <a href="#" className="text-lg text-white flex">
-                <i className="linkedin-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="lnkedin-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="facebook-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="fb-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="twitter-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="x-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="instagram-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="insta-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-lg text-white flex">
-                <i className="youtube-icon size-[35px] shrink-0"></i>
+              <a href="#" className="text-white flex">
+                <i className="yt-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
             </div>
           </div>

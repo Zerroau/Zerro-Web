@@ -23,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       />
 
       <div className="flex flex-col items-center justify-center gap-[13px] lg:gap-[19px] px-[2px] lg:px-[47px] pb-[33px] mt-5 lg:mt-[50px]">
-        <h2 className="text-xl lg:text-[26px]/[31.47px] font-bold text-center">
+        <h2 className="text-lg lg:text-[26px]/[31.47px] font-bold text-center">
           {title}
         </h2>
         <p className="text-lg max-lg:text-sm max-lg:text-active-text text-black/50 font-medium text-center">

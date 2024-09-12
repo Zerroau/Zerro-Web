@@ -21,7 +21,7 @@ const Page = () => {
             <h1 className="text-[50px]/[60px] max-lg:text-2xl font-bold text-center">
               Contact us
             </h1>
-            <p className="text-xl max-lg:text-sm font-bold text-active-text text-center">
+            <p className="text-lg max-lg:text-sm font-bold text-active-text text-center">
               Interested in working with our talented team? Reach out to us to
               discover how we can collaborate effectively and bring your ideas
               into reality.
@@ -68,10 +68,10 @@ const Page = () => {
         <div className="px-5 lg:px-[150px]">
           <div className="py-10 lg:py-[50px] px-6 max-lg:mx-5 bg-[#FAFAFA]">
             <div className="flex flex-col items-center justify-center gap-[25px] mb-8 lg:mb-[68px]">
-              <h2 className="text-xl lg:text-[50px]/[60px] font-bold text-center">
+              <h2 className="text-xl lg:text-[40px]/[48px] font-bold text-center">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xs lg:text-xl font-medium text-active-text text-center max-w-[860px]">
+              <p className="text-xs lg:text-lg font-medium text-active-text text-center max-w-[860px]">
                 Cras tincidunt lobortis feugiat vivamus at morbi leo urna
                 molestie atole elementum eu facilisis faucibus interdum posuere.
               </p>

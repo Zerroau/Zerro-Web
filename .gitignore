@@ -9,6 +9,10 @@
 # testing
 /coverage
 
+# icons
+/actions
+/app/create-icon
+
 # next.js
 /.next/
 /out/

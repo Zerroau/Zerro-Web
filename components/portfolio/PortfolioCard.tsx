@@ -17,7 +17,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ image, title }) => {
         height={800}
       />
 
-      <h2 className="text-xl lg:text-[26px]/[31.47px] font-bold mt-[22px] mb-[35px]">
+      <h2 className="text-sm lg:text-[26px]/[31.47px] font-bold mt-[22px] mb-[35px]">
         {title}
       </h2>
 
