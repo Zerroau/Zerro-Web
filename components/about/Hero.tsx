@@ -17,7 +17,7 @@ const Hero = () => {
             className="object-contain w-full h-auto lg:w-auto lg:h-[489px] max-lg:mt-10"
           />
           <div className="flex flex-col lg:max-w-[54%] z-10 lg:ml-6">
-            <h1 className="text-[28px]/[31px] lg:text-[60px]/[72.61px] font-bold mb-[20px] lg:mb-[26x] max-[370px]:text-wrap text-nowrap max-lg:text-center">
+            <h1 className="text-2xl lg:text-[50px]/[60px] font-bold mb-[20px] lg:mb-[26x] max-[370px]:text-wrap text-nowrap max-lg:text-center">
               We Are Experts <br className="max-lg:hidden" /> Turning{" "}
               <br className="max-[370px]:hidden lg:hidden" />
               <span className="text-primary-blue"> Ideas</span> into{" "}
@@ -44,7 +44,7 @@ const Hero = () => {
       <ScrollReveal>
         <div className="mt-[50px] lg:mt-[100px] max-lg:px-5 lg:pr-3 lg:pl-[150px] flex items-start max-lg:flex-col justify-center">
           <div className="flex flex-col lg:max-w-[54%] z-10 lg:mr-0.5">
-            <h2 className="text-[28px]/[31px] lg:text-[60px]/[72.61px] font-bold mb-5 lg:mb-[28px] text-nowrap">
+            <h2 className="text-xl lg:text-[40px]/[48px] font-bold mb-5 lg:mb-[28px] text-nowrap">
               Turning Ideas and <br /> Implementation into <br />
               <span className="text-primary-blue">Innovative Products</span>
             </h2>

@@ -9,7 +9,7 @@ const Page = () => {
     <div className="mt-[50px] pb-[50px] lg:pb-[100px] px-5 lg:px-[150px]">
       <ScrollReveal>
         <div className="flex flex-col items-center justify-center gap-[9px] lg:gap-4">
-          <h1 className="text-[28px]/[31px] lg:text-[60px]/[72px] font-bold text-center">
+          <h1 className="text-2xl lg:text-[50px]/[60px] font-bold text-center">
             Our services
           </h1>
           <p className="text-sm lg:text-lg font-medium text-center max-w-[680px] max-lg:text-active-text">

@@ -36,7 +36,7 @@ export default function LeadershipCarousel() {
 
   return (
     <div className="flex flex-col items-center justify-center mt-[35px] lg:mt-20 lg:px-[9px] max-lg:px-5">
-      <h3 className="text-[28px]/[31px] lg:text-[50px]/[61px] font-bold mb-5 lg:mb-[50px] text-center">
+      <h3 className="text-xl lg:text-[40px]/[48px] font-bold mb-5 lg:mb-[50px] text-center">
         Hear from our leadership team
       </h3>
 
@@ -48,7 +48,7 @@ export default function LeadershipCarousel() {
           >
             <div className="flex flex-col items-center justify-center">
               <Image
-                src="/images/user-placeholder.svg"
+                src={data.image ?? "/images/user-placeholder.svg"}
                 width={500}
                 height={500}
                 alt={data.name}
@@ -82,7 +82,7 @@ export default function LeadershipCarousel() {
                 <div className="bg-[#FAFAFA] flex flex-col gap-9 items-center justify-start px-5 pt-6 pb-[47px] h-full">
                   <div className="flex flex-col items-center justify-center">
                     <Image
-                      src="/images/user-placeholder.svg"
+                      src={data.image ?? "/images/user-placeholder.svg"}
                       width={500}
                       height={500}
                       alt={data.name}

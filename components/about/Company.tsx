@@ -20,10 +20,10 @@ const Company = () => {
     <div className="flex flex-col mt-[50px] lg:mt-[100px]">
       <ScrollReveal>
         <div className="flex flex-col items-center justify-center px-5 lg:px-[150px]">
-          <h2 className="text-[28px]/[31px] lg:text-[60px]/[72.61px] font-bold mb-[20px] text-center">
+          <h2 className="text-xl lg:text-[40px]/[48px] font-bold mb-[20px] text-center">
             The Founder’s <span className="text-primary-blue">Vision</span>
           </h2>
-          <p className="text-sm lg:text-lg font-medium text-black/50 max-w-[710px] text-center">
+          <p className="text-xs lg:text-lg font-medium text-black/50 max-w-[710px] text-center">
             At Zerro, our leadership team brings years of experience,
             creativity, and expertise in project management and product
             development. You’re not just working with a team; you’re
@@ -35,7 +35,7 @@ const Company = () => {
           <div className="bg-[#FAFAFA] flex flex-row max-lg:flex-col gap-2.5 lg:gap-[73px] items-center justify-center px-[15px] lg:px-[22px] py-[15px] lg:py-[30px]">
             <div className="flex flex-col items-center justify-center">
               <Image
-                src="/images/user-placeholder.svg"
+                src="/images/company/ceo.png"
                 width={500}
                 height={500}
                 alt="Dilitha Kolonne"

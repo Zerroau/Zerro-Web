@@ -12,7 +12,7 @@ const page = () => {
     <div className="mt-[50px] pb-[50px] lg:pb-[100px] px-5 lg:px-[150px]">
       <ScrollReveal>
         <div className="flex flex-col items-center justify-center gap-2.5">
-          <h1 className="text-[28px]/[31px] lg:text-[60px]/[72px] font-bold text-center">
+          <h1 className="text-2xl lg:text-[50px]/[60px] font-bold text-center">
             Portfolio
           </h1>
           <p className="text-lg max-lg:text-sm font-medium text-center max-w-[680px]">

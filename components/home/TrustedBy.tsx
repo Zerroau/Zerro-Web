@@ -82,7 +82,8 @@ const TrustedBy = () => {
           Don&apos;t just take our word for it
         </h2>
         <p className="text-xl font-bold text-center max-lg:text-sm">
-          Trusted by amazing clients
+          we’ve teamed up with top companies to develop and enhance their
+          products.
         </p>
       </div>
       <div className="overflow-hidden w-full">

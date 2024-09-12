@@ -6,7 +6,7 @@ const Process = () => {
   return (
     <div className="flex flex-col px-5 lg:px-[150px] mt-[50px] lg:mt-[100px]">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-[28px]/[33px] lg:text-[60px]/[72.61px] font-bold mb-6 lg:mb-[28px] text-center">
+        <h2 className="text-xl lg:text-[40px]/[48px] font-bold mb-6 lg:mb-[28px] text-center">
           Working together is simple
         </h2>
         <p className="text-sm lg:text-lg font-medium text-black/50 max-w-[910px] text-center">

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import MaxWidthContainer from "@/components/common/MaxWidthContainer";
 import Navbar from "@/components/common/navbar/Navbar";
+import Footer from "@/components/common/Footer";
+import ScrollReveal from "@/components/common/ScrollReveal";
 
 import "./globals.css";
 import "./icons.css";
-import Footer from "@/components/common/Footer";
-import ScrollReveal from "@/components/common/ScrollReveal";
+import "@/public/icons.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

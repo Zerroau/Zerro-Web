@@ -1,8 +1,8 @@
 import ScrollReveal from "@/components/common/ScrollReveal";
-import Articles from "@/components/home/Articles";
+import About from "@/components/home/About";
 import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
-import Process from "@/components/home/Process";
+import Talent from "@/components/home/Talent";
 import Technologies from "@/components/home/Technologies";
 import Testimonials from "@/components/home/Testimonials";
 import TrustedBy from "@/components/home/TrustedBy";
@@ -19,17 +19,21 @@ export default function Home() {
       </ScrollReveal>
 
       <ScrollReveal>
-        <Technologies />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <Process />
+        <About />
       </ScrollReveal>
 
       <ScrollReveal>
         <Features />
       </ScrollReveal>
-      {/* <Articles /> */}
+
+      <ScrollReveal>
+        <Technologies />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <Talent />
+      </ScrollReveal>
+
       <ScrollReveal>
         <Testimonials />
       </ScrollReveal>

@@ -1,6 +1,7 @@
 export const CompanyData = [
   {
     id: 1,
+    image: null,
     name: "Amila Jayashanka",
     title: "Technical Lead",
     description:
@@ -8,6 +9,7 @@ export const CompanyData = [
   },
   {
     id: 2,
+    image: "/images/company/senior-fullstack.png",
     name: "Janith Perera",
     title: "Senior Full Stack Developer",
     description:
@@ -15,6 +17,7 @@ export const CompanyData = [
   },
   {
     id: 3,
+    image: "/images/company/devops.png",
     name: " Sashin Indiwara",
     title: "DevOps Engineer",
     description:
@@ -22,6 +25,7 @@ export const CompanyData = [
   },
   {
     id: 4,
+    image: null,
     name: "Malinda Prabath",
     title: "Senior UI/UX Designer",
     description:
@@ -29,6 +33,7 @@ export const CompanyData = [
   },
   {
     id: 5,
+    image: null,
     name: "Shahid Bastianz",
     title: "Mobile Application Developer",
     description:

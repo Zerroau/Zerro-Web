@@ -57,7 +57,7 @@ const Technologies = () => {
       </div>
 
       <Tabs defaultValue="frontend" className="w-full h-full">
-        <TabsList className="flex flex-wrap items-start justify-start w-full h-full bg-white p-0 mb-4 lg:mb-[60px] max-lg:gap-x-[15px] gap-y-3">
+        <TabsList className="flex flex-wrap items-center justify-center w-full h-full bg-white p-0 mb-4 lg:mb-[60px] max-lg:gap-x-[15px] gap-y-3">
           {tabs.map((tab) => (
             <TabsTrigger
               key={tab.id}
@@ -70,7 +70,7 @@ const Technologies = () => {
         </TabsList>
         <TabsContent
           value="frontend"
-          className="flex flex-wrap gap-2.5 lg:gap-5 h-full"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
         >
           {technologies.frontend.map((tech) => (
             <div
@@ -94,7 +94,7 @@ const Technologies = () => {
         </TabsContent>
         <TabsContent
           value="backend"
-          className="flex flex-wrap gap-2.5 lg:gap-5 h-full"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
         >
           {technologies.backend.map((tech) => (
             <div
@@ -116,10 +116,102 @@ const Technologies = () => {
             </div>
           ))}
         </TabsContent>
-        <TabsContent value="database">database</TabsContent>
-        <TabsContent value="infra-devOps">infra-devOps</TabsContent>
-        <TabsContent value="mobile">mobile</TabsContent>
-        <TabsContent value="crm-erp">crm-erp</TabsContent>
+        <TabsContent
+          value="database"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
+        >
+          {technologies.database.map((tech) => (
+            <div
+              key={tech.id}
+              className="flex flex-col items-center gap-[17px] size-[76px] lg:size-[176px] bg-[#FAFAFA] px-2 py-4 lg:py-10 lg:px-[30px] shrink-0"
+            >
+              <div className="size-7 lg:size-[65px]">
+                <Image
+                  src={tech.url}
+                  alt={tech.title}
+                  width={100}
+                  height={100}
+                  className="size-7 lg:size-[65px] object-contain"
+                />
+              </div>
+              <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
+                {tech.title}
+              </p>
+            </div>
+          ))}
+        </TabsContent>
+        <TabsContent
+          value="infra-devOps"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
+        >
+          {technologies["infra-devOps"].map((tech) => (
+            <div
+              key={tech.id}
+              className="flex flex-col items-center gap-[17px] size-[76px] lg:size-[176px] bg-[#FAFAFA] px-2 py-4 lg:py-10 lg:px-[30px] shrink-0"
+            >
+              <div className="size-7 lg:size-[65px]">
+                <Image
+                  src={tech.url}
+                  alt={tech.title}
+                  width={100}
+                  height={100}
+                  className="size-7 lg:size-[65px] object-contain"
+                />
+              </div>
+              <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
+                {tech.title}
+              </p>
+            </div>
+          ))}
+        </TabsContent>
+        <TabsContent
+          value="mobile"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
+        >
+          {technologies.mobile.map((tech) => (
+            <div
+              key={tech.id}
+              className="flex flex-col items-center gap-[17px] size-[76px] lg:size-[176px] bg-[#FAFAFA] px-2 py-4 lg:py-10 lg:px-[30px] shrink-0"
+            >
+              <div className="size-7 lg:size-[65px]">
+                <Image
+                  src={tech.url}
+                  alt={tech.title}
+                  width={100}
+                  height={100}
+                  className="size-7 lg:size-[65px] object-contain"
+                />
+              </div>
+              <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
+                {tech.title}
+              </p>
+            </div>
+          ))}
+        </TabsContent>
+        <TabsContent
+          value="crm-erp"
+          className="flex flex-wrap items-center justify-center gap-2.5 lg:gap-5 h-full"
+        >
+          {technologies["crm-erp"].map((tech) => (
+            <div
+              key={tech.id}
+              className="flex flex-col items-center gap-[17px] size-[76px] lg:size-[176px] bg-[#FAFAFA] px-2 py-4 lg:py-10 lg:px-[30px] shrink-0"
+            >
+              <div className="size-7 lg:size-[65px]">
+                <Image
+                  src={tech.url}
+                  alt={tech.title}
+                  width={100}
+                  height={100}
+                  className="size-7 lg:size-[65px] object-contain"
+                />
+              </div>
+              <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
+                {tech.title}
+              </p>
+            </div>
+          ))}
+        </TabsContent>
       </Tabs>
     </div>
   );
