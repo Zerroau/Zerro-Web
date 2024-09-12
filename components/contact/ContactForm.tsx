@@ -132,12 +132,12 @@ const ContactForm = () => {
                   <AnimatedInput
                     placeholder={
                       field === "name"
-                        ? "John Carter"
+                        ? "Enter your name"
                         : field === "email"
-                        ? "example@devfy.com"
+                        ? "Enter your email address"
                         : field === "phone"
-                        ? "(414) 780 - 9341"
-                        : "Devfy"
+                        ? "Enter your telephone number"
+                        : "Enter your company name"
                     }
                     {...fieldProps}
                     className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"

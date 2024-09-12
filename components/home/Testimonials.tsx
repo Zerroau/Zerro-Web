@@ -21,8 +21,9 @@ const Testimonials = () => {
         </h3>
 
         <span className="text-xl max-lg:text-sm text-active-text max-w-[520px] font-medium">
-          Porta tincidunt at ac risus id sit eu quam eleifend dui ullamcorper
-          scelerisque sodales quisque consectetur faucibus tincidunt risus
+          We pride ourselves on delivering exceptional solutions that make a
+          real difference. But don’t just take our word for it - here’s what
+          some of our amazing clients have to say
         </span>
       </div>
       {/* <Carousel className="px-[77px] py-[47px] bg-[#FAFAFA]">
