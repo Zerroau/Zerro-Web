@@ -27,16 +27,28 @@ const Footer = () => {
             <span className="text-lg font-bold">Follow us on social media</span>
 
             <div className="flex flex-row gap-[15px]">
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.linkedin.com/company/zerroau/"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="lnkedin-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.facebook.com/profile.php?id=61564861119135&mibextid=LQQJ4d"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="fb-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
               <a href="#" className="text-white flex">
                 <i className="x-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.instagram.com/zerro_au?igsh=cnd1OHJyMmV1OWpj&utm_source=q"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="insta-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </a>
               <a href="#" className="text-white flex">
@@ -72,16 +84,28 @@ const Footer = () => {
             </span>
 
             <div className="flex flex-row gap-[15px]">
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.linkedin.com/company/zerroau/"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="lnkedin-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.facebook.com/profile.php?id=61564861119135&mibextid=LQQJ4d"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="fb-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
               <a href="#" className="text-white flex">
                 <i className="x-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
-              <a href="#" className="text-white flex">
+              <a
+                href="https://www.instagram.com/zerro_au?igsh=cnd1OHJyMmV1OWpj&utm_source=q"
+                target="_blank"
+                className="text-white flex"
+              >
                 <i className="insta-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </a>
               <a href="#" className="text-white flex">
