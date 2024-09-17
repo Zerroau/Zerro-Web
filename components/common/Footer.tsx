@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { Button } from "../ui/button";
 import { navData } from "./navbar/nav-data";
 import Link from "next/link";
+import NewsLetter from "./NewsLetter";
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
 
           <span className="flex flex-col gap-[5px] font-bold mt-[34px] max-lg:hidden">
             <span className="text-sm">Phone</span>
-            <span className="text-lg">(487) 456 - 789</span>
+            <span className="text-lg">+61 433 993 708</span>
           </span>
 
           <div className="flex flex-col mt-[34px] gap-2.5 max-lg:hidden">
@@ -67,19 +68,7 @@ const Footer = () => {
             <br className="max-sm:hidden" /> let’s work on your project!
           </h4>
 
-          <div className="bg-white px-2.5 py-[18px] lg:p-2.5 mt-[34px] flex items-center justify-between">
-            <input
-              className="focus:outline-none border-none placeholder:text-active-text w-full text-black"
-              placeholder="Enter your email address"
-            />
-            <Button className="rounded-none bg-black w-[160px] h-[60px] text-white max-sm:hidden hover:bg-primary-blue transition-all duration-300 ease-in-out">
-              Subscribe
-            </Button>
-          </div>
-
-          <Button className="rounded-none bg-white w-full h-[45px] text-black sm:hidden mt-2.5 text-base font-bold">
-            Subscribe
-          </Button>
+          <NewsLetter />
 
           <div className="flex flex-col items-center justify-center w-full mt-[30px] gap-2.5 lg:hidden">
             <span className="text-lg max-lg:text-sm font-bold text-center">

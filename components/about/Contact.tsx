@@ -62,6 +62,14 @@ const Contact = () => {
             contact@zerro.com.au
           </span>
         </div>
+
+        <div className="flex flex-col items-center justify-center gap-[6px]">
+          <h3 className="text-2xl font-bold max-lg:text-lg">New Zealand</h3>
+          <span className="text-lg font-medium text-active-text flex items-center max-lg:text-xs">
+            <Mail className="size-5 shrink-0 mr-2.5" />
+            contact@zerro.nz
+          </span>
+        </div>
       </div>
 
       <Image

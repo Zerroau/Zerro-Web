@@ -230,5 +230,10 @@ export const technologies = {
       title: "SAP",
       url: "/images/tech/crm/sap.png",
     },
+    {
+      id: 4,
+      title: "HubSpot",
+      url: "/images/tech/crm/hubspot.png",
+    },
   ],
 };
