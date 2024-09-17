@@ -49,7 +49,7 @@ export default function ScrollReveal({
       variants={animation}
       transition={{
         ...transition,
-        ease: [0.25, 0.1, 0.25, 1], // Improved easing function
+        ease: [0.25, 0.1, 0.25, 1],
       }}
     >
       {children}

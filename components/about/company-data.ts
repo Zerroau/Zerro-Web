@@ -25,7 +25,7 @@ export const CompanyData = [
   },
   {
     id: 4,
-    image: null,
+    image: "/images/company/ui-ux.png",
     name: "Malinda Prabath",
     title: "Senior UI/UX Designer",
     description:

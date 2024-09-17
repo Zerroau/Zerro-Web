@@ -7,11 +7,11 @@ interface FeaturesProps {
   hideContact?: boolean;
 }
 
-const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
+const Features: React.FC<FeaturesProps> = () => {
   return (
     <div className="flex flex-col gap-[26px] lg:gap-[50px] items-center px-5 lg:px-[150px] mt-[50px] lg:mt-[100px] w-full">
       <div className="flex flex-col gap-[15px] w-full">
-        <h3 className="text-xl lg:text-[50px]/[60.51px] font-bold text-center">
+        <h3 className="text-xl lg:text-[40px]/[48.51px] font-bold text-center">
           Working together is simple
         </h3>
         <span className="text-sm lg:text-2xl text-active-text font-medium text-center">
@@ -57,26 +57,6 @@ const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div
-        className={cn(
-          "flex flex-row items-center gap-[38px] mt-10 max-lg:hidden",
-          hideContact && "hidden"
-        )}
-      >
-        <Link
-          href="/contact"
-          className="text-lg text-white bg-black w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out"
-        >
-          Contact Us
-        </Link>
-        <Link
-          href="/services"
-          className="text-lg text-black bg-white w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center border border-black hover:text-white hover:border-primary-blue hover:bg-primary-blue transition-all duration-300 ease-in-out"
-        >
-          Our Services
-        </Link>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="mt-[50px] px-5 lg:px-[150px] flex flex-col lg:flex-row items-center lg:justify-between">
+    <div className="mt-[50px] px-5 lg:pl-[150px] lg:pr-0 flex flex-col lg:flex-row items-center lg:justify-between">
       <div className="flex flex-col w-full lg:max-w-[54%] z-10  items-center lg:items-start text-center lg:text-left">
         <h1 className="text-2xl leading-[33px] lg:text-[50px]/[60px] lg:leading-[72.61px] font-bold mb-5 lg:mb-[26px] whitespace-normal lg:whitespace-nowrap">
           We build world&apos;s finest
