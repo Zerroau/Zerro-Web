@@ -55,7 +55,7 @@ const Page = () => {
                 What to join our Team ?
               </h3>
               <p className="text-lg max-lg:text-xs font-bold">
-                Careers@zerro.com.au
+                careers@zerro.com.au
               </p>
             </div>
           </div>

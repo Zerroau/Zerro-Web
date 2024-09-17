@@ -14,15 +14,15 @@ export const navData = [
     text: "Services",
     url: "/services",
   },
-  {
-    id: 4,
-    text: "Media",
-    url: "/media",
-  },
+  // {
+  //   id: 4,
+  //   text: "Media",
+  //   url: "/media",
+  // },
   {
     id: 5,
     text: "Careers",
-    url: "/careers",
+    url: "/contact",
   },
 ];
 

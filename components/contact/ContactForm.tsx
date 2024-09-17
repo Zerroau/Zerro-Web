@@ -14,7 +14,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/contact/send-email";
+import toast, { Toaster } from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   name: z
@@ -89,54 +92,130 @@ const ContactForm = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    window.open(
-      `mailto:contact@zerro.com.au?subject=Contact Form&body=Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0APhone: ${data.phone}%0D%0ACompany: ${data.company}%0D%0AMessage: ${data.message}`
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const res = await sendEmail(
+      data.name,
+      data.email,
+      data.phone,
+      data.message,
+      data.company
     );
+
+    if (res) {
+      toast.success("Message sent successfully");
+
+      form.reset({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        message: "",
+      });
+    } else {
+      toast.error("Failed to send message");
+    }
   };
+
+  const action: () => void = form.handleSubmit(onSubmit);
 
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        action={action}
         className="lg:px-[100px] grid grid-cols-2 gap-x-5 gap-y-5 lg:gap-y-7"
       >
-        {["name", "email", "phone", "company"].map((field, index) => (
-          <FormField
-            key={field}
-            control={form.control}
-            name={field as keyof z.infer<typeof formSchema>}
-            render={({ field: fieldProps }) => (
-              <FormItem className="space-y-1.5 max-lg:col-span-2">
-                <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
-                  {field.charAt(0).toUpperCase() + field.slice(1)}
-                  {field === "company" && (
-                    <span className="text-xs font-semibold">(optional)</span>
-                  )}
-                </FormLabel>
-                <FormControl>
-                  <AnimatedInput
-                    placeholder={
-                      field === "name"
-                        ? "Enter your name"
-                        : field === "email"
-                        ? "Enter your email address"
-                        : field === "phone"
-                        ? "Enter your telephone number"
-                        : "Enter your company name"
-                    }
-                    {...fieldProps}
-                    className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        ))}
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem className="space-y-1.5 max-lg:col-span-2">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+                Name
+              </FormLabel>
+              <FormControl>
+                <AnimatedInput
+                  placeholder="Name"
+                  {...field}
+                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0 }}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem className="space-y-1.5 max-lg:col-span-2">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+                Email
+              </FormLabel>
+              <FormControl>
+                <AnimatedInput
+                  placeholder="Email"
+                  {...field}
+                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem className="space-y-1.5 max-lg:col-span-2">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+                Phone
+              </FormLabel>
+              <FormControl>
+                <AnimatedInput
+                  placeholder="Phone"
+                  {...field}
+                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="company"
+          render={({ field }) => (
+            <FormItem className="space-y-1.5 max-lg:col-span-2">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+                Company
+                <span className="text-xs font-semibold">(optional)</span>
+              </FormLabel>
+              <FormControl>
+                <AnimatedInput
+                  placeholder="Company"
+                  {...field}
+                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
         <FormField
           control={form.control}
@@ -164,12 +243,19 @@ const ContactForm = () => {
         <div className="col-span-2 flex items-center justify-center">
           <AnimatedButton
             type="submit"
-            className="text-lg max-lg:text-xs text-white bg-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold"
+            disabled={form.formState.isSubmitting}
+            className="text-lg max-lg:text-xs text-white bg-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold flex items-center justify-center"
           >
-            Send Message
+            {form.formState.isSubmitting ? (
+              <Loader2 className="size-8 animate-spin" />
+            ) : (
+              " Send Message"
+            )}
           </AnimatedButton>
         </div>
       </form>
+
+      <Toaster position="top-right" />
     </Form>
   );
 };

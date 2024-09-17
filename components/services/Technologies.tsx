@@ -1,7 +1,8 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { technologies } from "./tech";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import { technologies } from "@/components/home/tech";
 
 const tabs = [
   {
