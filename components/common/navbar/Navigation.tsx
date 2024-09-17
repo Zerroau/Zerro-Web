@@ -22,7 +22,10 @@ export default function Navigation() {
       {navData.map((item) =>
         item.text === "Services" ? (
           <DropdownMenu key={item.id} open={isOpen} onOpenChange={setIsOpen}>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger
+              asChild
+              className="focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
               <Link
                 href={item.url}
                 className={cn(
