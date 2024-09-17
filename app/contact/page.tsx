@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import ContactForm from "@/components/contact/ContactForm";
@@ -9,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { Mail, Plus } from "lucide-react";
 import ScrollReveal from "@/components/common/ScrollReveal";
 
 const Page = () => {
@@ -21,7 +23,7 @@ const Page = () => {
             <h1 className="text-[50px]/[60px] max-lg:text-2xl font-bold text-center">
               Contact us
             </h1>
-            <p className="text-lg max-lg:text-sm font-bold text-active-text text-center">
+            <p className="text-lg max-lg:text-sm font-medium text-active-text text-center">
               Interested in working with our talented team? Reach out to us to
               discover how we can collaborate effectively and bring your ideas
               into reality.
@@ -66,7 +68,7 @@ const Page = () => {
 
       <ScrollReveal>
         <div className="px-5 lg:px-[150px]">
-          <div className="py-10 lg:py-[50px] px-6 max-lg:mx-5 bg-[#FAFAFA]">
+          <div className="py-10 lg:py-[50px] px-6 max-lg:px-3 bg-[#FAFAFA]">
             <div className="flex flex-col items-center justify-center gap-[25px] mb-8 lg:mb-[68px]">
               <h2 className="text-xl lg:text-[40px]/[48px] font-bold text-center">
                 Frequently Asked Questions
@@ -79,7 +81,10 @@ const Page = () => {
 
             <Accordion type="multiple" className="grid grid-cols-2 gap-x-5">
               <AccordionItem value="item-1" className="max-lg:col-span-2">
-                <AccordionTrigger className="text-sm lg:text-lg font-bold h-20">
+                <AccordionTrigger
+                  Icon={Plus}
+                  className="text-sm lg:text-lg font-bold h-20"
+                >
                   What Services Does Zerro Offer?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -88,7 +93,10 @@ const Page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="max-lg:col-span-2">
-                <AccordionTrigger className="text-sm lg:text-lg font-bold h-20">
+                <AccordionTrigger
+                  Icon={Plus}
+                  className="text-sm lg:text-lg font-bold h-20"
+                >
                   How Do I Start a Project with Zerro?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -98,7 +106,10 @@ const Page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3" className="max-lg:col-span-2">
-                <AccordionTrigger className="text-sm lg:text-lg font-bold h-20">
+                <AccordionTrigger
+                  Icon={Plus}
+                  className="text-sm lg:text-lg font-bold h-20"
+                >
                   What are the Technologies That Zerro Use for Development?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -110,7 +121,10 @@ const Page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4" className="max-lg:col-span-2">
-                <AccordionTrigger className="text-sm lg:text-lg font-bold h-20">
+                <AccordionTrigger
+                  Icon={Plus}
+                  className="text-sm lg:text-lg font-bold h-20"
+                >
                   Do you offer ongoing support after project completion?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -180,6 +194,14 @@ const Page = () => {
               <span className="text-lg font-medium text-active-text flex items-center max-lg:text-xs">
                 <Mail className="size-5 shrink-0 mr-2.5" />
                 contact@zerro.com.au
+              </span>
+            </div>
+
+            <div className="flex flex-col items-center justify-center gap-[6px]">
+              <h3 className="text-2xl font-bold max-lg:text-lg">New Zealand</h3>
+              <span className="text-lg font-medium text-active-text flex items-center max-lg:text-xs">
+                <Mail className="size-5 shrink-0 mr-2.5" />
+                contact@zerro.nz
               </span>
             </div>
           </div>

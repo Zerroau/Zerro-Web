@@ -15,7 +15,10 @@ const Footer = () => {
           </p>
           <span className="flex flex-col gap-[5px] font-bold max-lg:hidden">
             <span className="text-sm">Email</span>
-            <span className="text-lg">contact@zerro.com.au</span>
+            <div className="flex flex-col">
+              <span className="text-lg">contact@zerro.nz</span>
+              <span className="text-lg">contact@zerro.com.au</span>
+            </div>
           </span>
 
           <span className="flex flex-col gap-[5px] font-bold mt-[34px] max-lg:hidden">
@@ -61,7 +64,7 @@ const Footer = () => {
         <div className="flex flex-col w-full lg:max-w-[510px]">
           <h4 className="text-2xl lg:text-[40px]/[48px] font-bold max-lg:text-center">
             Get in touch with us and
-            <br /> let’s work on your project!
+            <br className="max-sm:hidden" /> let’s work on your project!
           </h4>
 
           <div className="bg-white px-2.5 py-[18px] lg:p-2.5 mt-[34px] flex items-center justify-between">
@@ -78,7 +81,7 @@ const Footer = () => {
             Subscribe
           </Button>
 
-          <div className="flex flex-col items-center justify-center w-full mt-[54px] gap-2.5 lg:hidden">
+          <div className="flex flex-col items-center justify-center w-full mt-[30px] gap-2.5 lg:hidden">
             <span className="text-lg max-lg:text-sm font-bold text-center">
               Follow us on social media
             </span>
@@ -114,12 +117,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-row items-center max-lg:justify-center gap-[9px] mt-6 lg:mt-14">
+          <div className="flex items-center justify-between lg:hidden mt-4">
+            <span className="text-sm font-medium">contact@zerro.nz</span>
+            <span className="text-sm font-medium">contact@zerro.com.au</span>
+          </div>
+
+          <div className="flex flex-row items-center max-lg:justify-center gap-[9px] mt-[30px] lg:mt-14">
             {navData.map((navItem, index) => (
               <Link
                 href={navItem.url}
                 key={index}
-                className="text-[#D9D9D9] max-lg:text-xs text-lg font-bold"
+                className="text-[#D9D9D9] max-lg:text-xs text-lg font-medium"
               >
                 {navItem.text}
               </Link>

@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -85,15 +85,14 @@ const AnimatedButton = ({
 );
 
 const ContactForm = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    window.open(
+      `mailto:contact@zerro.com.au?subject=Contact Form&body=Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0APhone: ${data.phone}%0D%0ACompany: ${data.company}%0D%0AMessage: ${data.message}`
+    );
   };
 
   return (
@@ -102,19 +101,6 @@ const ContactForm = () => {
         onSubmit={form.handleSubmit(onSubmit)}
         className="lg:px-[100px] grid grid-cols-2 gap-x-5 gap-y-5 lg:gap-y-7"
       >
-        <AnimatePresence>
-          {isSubmitted && (
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              className="col-span-2 bg-green-500 text-white p-4 rounded-md text-center"
-            >
-              Thank you for your message! We&apos;ll get back to you soon.
-            </motion.div>
-          )}
-        </AnimatePresence>
-
         {["name", "email", "phone", "company"].map((field, index) => (
           <FormField
             key={field}
