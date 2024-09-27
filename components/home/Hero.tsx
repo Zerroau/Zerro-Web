@@ -33,7 +33,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="mt-8 lg:mt-0 lg:-ml-[110px] min-[1550px]:ml-0 w-full lg:w-auto">
+      <div className="mt-8 lg:mt-0 lg:mr-[40px] min-[1550px]:ml-0 w-full lg:w-auto">
         <Image
           src="/images/hero.svg"
           width={1000}
