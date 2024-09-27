@@ -11,7 +11,7 @@ const Talent = () => {
       </h3>
 
       <div className="grid grid-cols-3 gap-[18px] w-full">
-        <div className="flex flex-col gap-6 lg:gap-[17px] h-full w-full bg-[#0F0F0F] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3 text-white">
+        <div className="flex flex-col gap-6 lg:gap-[17px] h-full w-full bg-[#0F0F0F] dark:bg-[#0577FF] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3 text-white">
           <i className="selective-hiring-icon size-[35px] lg:size-[60px] text-white" />
           <div className="flex flex-col gap-6 lg:gap-[36px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
@@ -25,8 +25,8 @@ const Talent = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 lg:gap-[17px]  h-full w-full bg-[#FAFAFA] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3">
-          <i className="continous-skill-icon size-[35px] lg:size-[60px] text-black" />
+        <div className="flex flex-col gap-6 lg:gap-[17px]  h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3">
+          <i className="continous-skill-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
           <div className="flex flex-col gap-6 lg:gap-[36px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Continuous Skill Development
@@ -37,8 +37,8 @@ const Talent = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-6 lg:gap-[17px]  h-full w-full bg-[#FAFAFA] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3">
-          <i className="proven-record-icon size-[35px] lg:size-[60px] text-black" />
+        <div className="flex flex-col gap-6 lg:gap-[17px]  h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-9 pb-[60px] lg:pt-[56px] lg:pb-[50px] lg:px-8 max-lg:col-span-3">
+          <i className="proven-record-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
           <div className="flex flex-col gap-6 lg:gap-[36px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Proven Track Record

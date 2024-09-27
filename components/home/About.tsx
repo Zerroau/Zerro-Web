@@ -14,7 +14,7 @@ const About = () => {
         {aboutData.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col gap-[5px] lg:gap-0 h-full w-full bg-[#FAFAFA] px-5 pt-2.5 lg:pt-[7px] pb-[25px] col-span-6 sm:col-span-3 lg:col-span-2"
+            className="flex flex-col gap-[5px] lg:gap-2.5 h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-5 pt-2.5 lg:pt-[7px] pb-[25px] col-span-6 sm:col-span-3 lg:col-span-2"
           >
             <i className={cn("size-[30px] lg:size-[50px]", data.icon)} />
             <div className="flex flex-col gap-[10px] lg:gap-4">

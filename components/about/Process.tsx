@@ -9,7 +9,7 @@ const Process = () => {
         <h2 className="text-xl lg:text-[40px]/[48px] font-bold mb-6 lg:mb-[28px] text-center">
           Working together is simple
         </h2>
-        <p className="text-sm lg:text-lg font-medium text-black/50 max-w-[910px] text-center">
+        <p className="text-sm lg:text-lg font-medium text-black/50 max-w-[910px] text-center dark:text-white/60">
           At Zerro, we guide you from the inception of your idea to its
           transformation into a finished product. Here’s how we make it happen.
         </p>
@@ -20,20 +20,20 @@ const Process = () => {
           <div
             key={index}
             className={cn(
-              "flex flex-col p-[18px] max-lg:col-span-3 bg-[#FAFAFA]",
-              item.id === 1 && "bg-black"
+              "flex flex-col p-[18px] max-lg:col-span-3 bg-[#FAFAFA] dark:bg-[#121B26]",
+              item.id === 1 && "bg-black dark:bg-[#0577FF]"
             )}
           >
             <i
               className={cn(
-                "size-[92px] max-lg:size-12 text-black shrink-0 mb-[15px] max-lg:mb-6",
+                "size-[50px] lg:size-[60px] max-lg:size-12 text-black shrink-0 mb-[15px] max-lg:mb-6 dark:text-white",
                 item.icon,
                 item.id === 1 && "text-white"
               )}
             />
             <h3
               className={cn(
-                "text-lg lg:text-[26px]/[31px] font-bold mb-1 max-lg:mb-[22px]",
+                "text-lg lg:text-[26px]/[31px] font-bold mb-[22px]",
                 item.id === 1 && "text-white"
               )}
             >
@@ -41,7 +41,7 @@ const Process = () => {
             </h3>
             <p
               className={cn(
-                "text-xs font-semibold text-active-text",
+                "text-xs font-semibold text-active-text lg:text-xl",
                 item.id === 1 && "text-[#D9D9D9]"
               )}
             >

@@ -41,13 +41,13 @@ const NewsLetter = () => {
           value={email}
           required
           onChange={(e) => setEmail(e.target.value)}
-          className="focus:outline-none border-none placeholder:text-active-text w-full text-black"
+          className="focus:outline-none border-none placeholder:text-active-text w-full text-black dark:bg-transparent"
           placeholder="Enter your email address"
         />
         <Button
           type="submit"
           disabled={loading}
-          className="rounded-none bg-black w-[160px] h-[60px] text-white max-sm:hidden hover:bg-primary-blue transition-all duration-300 ease-in-out"
+          className="rounded-none bg-black dark:bg-black dark:text-white w-[160px] h-[60px] text-white max-sm:hidden hover:bg-primary-blue transition-all duration-300 ease-in-out"
         >
           {loading ? <Loader2 className="size-6 animate-spin" /> : "Subscribe"}
         </Button>

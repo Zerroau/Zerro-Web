@@ -44,7 +44,7 @@ export default function LeadershipCarousel() {
         {CompanyData.map((data) => (
           <div
             key={data.id}
-            className="bg-[#FAFAFA] flex flex-col gap-[9px] items-center justify-start px-[18px] pt-6 pb-[35px] h-full"
+            className="bg-[#FAFAFA] dark:bg-[#121B26] flex flex-col gap-[9px] items-center justify-start px-[18px] pt-6 pb-[35px] h-full"
           >
             <div className="flex flex-col items-center justify-center">
               <Image
@@ -55,12 +55,12 @@ export default function LeadershipCarousel() {
                 className="size-[120px] lg:size-[214px] object-contain"
               />
               <span className="font-bold text-lg mt-[28px]">{data.name}</span>
-              <p className="text-sm font-semibold text-black/50 mt-[9px]">
+              <p className="text-sm font-semibold text-black/50 mt-[9px] dark:text-white/60">
                 {data.title}
               </p>
             </div>
 
-            <span className="text-xs font-semibold text-black/50 text-center">
+            <span className="text-xs font-semibold text-black/50 text-center dark:text-white/60">
               {data.description}
             </span>
           </div>
@@ -79,7 +79,7 @@ export default function LeadershipCarousel() {
                 key={data.id}
                 className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] min-w-0 mr-6 min-h-full"
               >
-                <div className="bg-[#FAFAFA] flex flex-col gap-9 items-center justify-start px-5 pt-6 pb-[47px] h-full">
+                <div className="bg-[#FAFAFA] dark:bg-[#121B26] flex flex-col gap-9 items-center justify-start px-5 pt-6 pb-[47px] h-full">
                   <div className="flex flex-col items-center justify-center">
                     <Image
                       src={data.image ?? "/images/user-placeholder.svg"}
@@ -91,12 +91,12 @@ export default function LeadershipCarousel() {
                     <span className="font-bold text-2xl mt-[14px]">
                       {data.name}
                     </span>
-                    <p className="text-lg font-semibold text-black/50">
+                    <p className="text-lg font-semibold text-black/50 dark:text-white/60">
                       {data.title}
                     </p>
                   </div>
 
-                  <span className="text-xs font-semibold text-black/50 text-center">
+                  <span className="text-xs font-semibold text-black/50 text-center dark:text-white/60">
                     {data.description}
                   </span>
                 </div>
@@ -110,7 +110,7 @@ export default function LeadershipCarousel() {
           onClick={scrollPrev}
           disabled={!prevBtnEnabled}
         >
-          <ChevronLeft className="size-4 lg:size-6" />
+          <ChevronLeft className="size-4 lg:size-6 dark:text-black" />
         </button>
 
         <button
@@ -118,7 +118,7 @@ export default function LeadershipCarousel() {
           onClick={scrollNext}
           disabled={!nextBtnEnabled}
         >
-          <ChevronRight className="size-4 lg:size-6" />
+          <ChevronRight className="size-4 lg:size-6 dark:text-black" />
         </button>
       </div>
     </div>

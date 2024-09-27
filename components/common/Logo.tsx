@@ -20,7 +20,17 @@ const Logo = ({
         width={500}
         height={500}
         className={cn(
-          "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110",
+          "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 dark:hidden",
+          className
+        )}
+      />
+      <Image
+        src={"/images/logo-footer.png"}
+        alt="Logo"
+        width={500}
+        height={500}
+        className={cn(
+          "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 hidden dark:block",
           className
         )}
       />

@@ -16,14 +16,14 @@ const Services = () => {
           <div
             key={data.id}
             id={data.value}
-            className="flex flex-col gap-[5px] lg:gap-2.5 h-full w-full bg-[#FAFAFA] px-5 pt-2.5 lg:pt-[35px] lg:px-6 pb-[42px] col-span-6 sm:col-span-3 lg:col-span-2"
+            className="flex flex-col gap-[5px] lg:gap-2.5 h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-5 pt-2.5 lg:pt-[35px] lg:px-6 pb-[42px] col-span-6 sm:col-span-3 lg:col-span-2"
           >
             <i className={cn("size-[30px] lg:size-[50px]", data.icon)} />
             <div className="flex flex-col justify-between gap-[5px] lg:gap-5">
               <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
                 {data.title}
               </h4>
-              <p className="text-sm lg:text-lg font-medium text-active-text">
+              <p className="text-sm lg:text-lg font-medium text-active-text dark:text-white/60">
                 {data.description}
               </p>
             </div>

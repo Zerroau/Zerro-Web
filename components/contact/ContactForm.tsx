@@ -129,14 +129,14 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem className="space-y-1.5 max-lg:col-span-2">
-              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F] dark:text-white">
                 Name
               </FormLabel>
               <FormControl>
                 <AnimatedInput
                   placeholder="Name"
                   {...field}
-                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0 }}
@@ -152,14 +152,14 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem className="space-y-1.5 max-lg:col-span-2">
-              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F] dark:text-white">
                 Email
               </FormLabel>
               <FormControl>
                 <AnimatedInput
                   placeholder="Email"
                   {...field}
-                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -175,14 +175,14 @@ const ContactForm = () => {
           name="phone"
           render={({ field }) => (
             <FormItem className="space-y-1.5 max-lg:col-span-2">
-              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F]">
+              <FormLabel className="text-lg max-lg:text-xs max-lg:font-semibold font-bold text-[#0F0F0F] dark:text-white">
                 Phone
               </FormLabel>
               <FormControl>
                 <AnimatedInput
                   placeholder="Phone"
                   {...field}
-                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
@@ -206,7 +206,7 @@ const ContactForm = () => {
                 <AnimatedInput
                   placeholder="Company"
                   {...field}
-                  className="border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
@@ -228,7 +228,7 @@ const ContactForm = () => {
               <FormControl>
                 <AnimatedTextarea
                   placeholder="Please type your message here..."
-                  className="resize-none max-lg:text-xs h-[200px] lg:h-[236px] border-2 border-black rounded-none placeholder:text-[#0F0F0F] placeholder:text-lg max-lg:placeholder:text-xs placeholder:font-normal"
+                  className="resize-none max-lg:text-xs h-[200px] lg:h-[236px] border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs placeholder:font-normal"
                   {...field}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -244,7 +244,7 @@ const ContactForm = () => {
           <AnimatedButton
             type="submit"
             disabled={form.formState.isSubmitting}
-            className="text-lg max-lg:text-xs text-white bg-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold flex items-center justify-center"
+            className="text-lg max-lg:text-xs text-white bg-black dark:bg-white dark:text-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold flex items-center justify-center"
           >
             {form.formState.isSubmitting ? (
               <Loader2 className="size-8 animate-spin" />

@@ -14,15 +14,15 @@ const Features: React.FC<FeaturesProps> = () => {
         <h3 className="text-xl lg:text-[40px]/[48.51px] font-bold text-center">
           Working together is simple
         </h3>
-        <span className="text-sm lg:text-2xl text-active-text font-medium text-center">
+        <span className="text-sm lg:text-2xl text-active-text font-medium text-center dark:text-white/60">
           We create a simple framework to collaborate and develop technologies
           tailored for your business
         </span>
       </div>
       <div className="grid grid-cols-3 gap-[18px] w-full">
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
-          <i className="discovery-icon size-[35px] lg:size-[60px] text-black" />
-          <div className="flex flex-col gap-[14px] lg:gap-7">
+        <div className="flex flex-col gap-5 lg:gap-[17px] h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
+          <i className="discovery-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
+          <div className="flex flex-col gap-[14px] lg:gap-[22px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Discovery and Consultation
             </h4>
@@ -33,21 +33,21 @@ const Features: React.FC<FeaturesProps> = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
-          <i className="custom-development-icon size-[35px] lg:size-[60px] text-black" />
-          <div className="flex flex-col gap-[14px] lg:gap-7">
+        <div className="flex flex-col gap-5 lg:gap-[17px] h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
+          <i className="custom-development-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
+          <div className="flex flex-col gap-[14px] lg:gap-[22px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Custom Development Plan
             </h4>
-            <p className="text-sm lg:text-lg font-medium text-active-text">
+            <p className="text-sm lg:text-lg font-medium text-active-text dark:text-white/60">
               We craft a customized development plan, outlining the technologies
               and strategies we’ll use to build your project.
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#0F0F0F] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3 text-white">
+        <div className="flex flex-col gap-5 lg:gap-[17px] h-full w-full bg-[#0F0F0F] dark:bg-[#0577FF] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3 text-white">
           <i className="effortless-icon size-[35px] lg:size-[60px] text-white" />
-          <div className="flex flex-col gap-[14px] lg:gap-7">
+          <div className="flex flex-col gap-[14px] lg:gap-[22px]">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Effortless Collaboration
             </h4>
