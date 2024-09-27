@@ -23,7 +23,7 @@ const Company = () => {
           <h2 className="text-xl lg:text-[40px]/[48px] font-bold mb-[20px] text-center">
             The Founder’s <span className="text-primary-blue">Vision</span>
           </h2>
-          <p className="text-xs lg:text-lg font-medium text-black/50 max-w-[710px] text-center">
+          <p className="text-xs lg:text-lg font-medium text-black/50 max-w-[710px] text-center dark:text-white/60">
             At Zerro, our leadership team brings years of experience,
             creativity, and expertise in project management and product
             development. You’re not just working with a team; you’re
@@ -32,7 +32,7 @@ const Company = () => {
           </p>
         </div>
         <div className="px-5 lg:px-[150px] mt-[29px] lg:mt-[45px]">
-          <div className="bg-[#FAFAFA] flex flex-row max-lg:flex-col gap-2.5 lg:gap-[73px] items-center justify-center px-[15px] lg:px-[22px] py-[15px] lg:py-[30px]">
+          <div className="bg-[#FAFAFA] dark:bg-[#121B26] flex flex-row max-lg:flex-col gap-2.5 lg:gap-[73px] items-center justify-center px-[15px] lg:px-[22px] py-[15px] lg:py-[30px]">
             <div className="flex flex-col items-center justify-center">
               <Image
                 src="/images/company/ceo.png"
@@ -44,14 +44,14 @@ const Company = () => {
               <span className="font-bold text-xl lg:text-[26px]/[31px] mt-4">
                 Dilitha Kolonne
               </span>
-              <p className="text-sm lg:text-xl font-semibold text-black/50">
+              <p className="text-sm lg:text-xl font-semibold text-black/50 dark:text-white/60">
                 Founder/ CEO
               </p>
             </div>
 
             <div className="flex flex-row">
-              <i className="quote-icon-2 size-4 lg:size-10 shrink-0 text-[#848484] mr-[7px]" />
-              <span className="text-lg max-lg:text-sm font-semibold text-black/50 max-w-[580px] text-center">
+              <i className="quote-icon-2 size-4 lg:size-10 shrink-0 text-[#848484] mr-[7px] dark:text-black" />
+              <span className="text-lg max-lg:text-sm font-semibold text-black/50 max-w-[580px] text-center dark:text-white/60">
                 Having collaborated with businesses of all sizes, from startups
                 to enterprises, across the globe, I’ve observed common
                 challenges such as limited growth, high costs, and
@@ -61,7 +61,7 @@ const Company = () => {
                 we can transform technological challenges into opportunities for
                 growth and success.
               </span>
-              <i className="quote-icon-2 size-4 lg:size-10 shrink-0 text-[#848484] mt-auto rotate-180 ml-4" />
+              <i className="quote-icon-2 size-4 lg:size-10 shrink-0 text-[#848484] mt-auto rotate-180 ml-4 dark:text-black" />
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const Company = () => {
       </ScrollReveal>
 
       <ScrollReveal>
-        <div className="bg-black h-full flex flex-row max-lg:flex-col-reverse items-center gap-5 lg:gap-[100px] pt-5 mt-[50px] lg:mt-[100px]">
+        <div className="bg-black dark:bg-[#121B26] h-full flex flex-row max-lg:flex-col-reverse items-center gap-5 lg:gap-[100px] pt-5 mt-[50px] lg:mt-[100px] lg:justify-between lg:pr-[150px]">
           <Image
             src="/images/help-image.svg"
             width={1000}
@@ -108,7 +108,7 @@ const Company = () => {
               <br />
               <span className="text-primary-blue">
                 Talk to our experts
-                <br /> today.
+                <br className="min-[1500px]:hidden" /> today.
               </span>
             </h5>
             <Link

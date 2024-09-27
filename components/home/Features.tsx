@@ -20,8 +20,8 @@ const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
         </span>
       </div>
       <div className="grid grid-cols-3 gap-[18px] w-full">
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
-          <i className="discovery-icon size-[35px] lg:size-[60px] text-black" />
+        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
+          <i className="discovery-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
           <div className="flex flex-col gap-[14px] lg:gap-7">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Discovery and Consultation
@@ -33,8 +33,8 @@ const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
-          <i className="custom-development-icon size-[35px] lg:size-[60px] text-black" />
+        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#FAFAFA] dark:bg-[#121B26] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3">
+          <i className="custom-development-icon size-[35px] lg:size-[60px] text-black dark:text-white" />
           <div className="flex flex-col gap-[14px] lg:gap-7">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
               Custom Development Plan
@@ -45,7 +45,7 @@ const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#0F0F0F] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3 text-white">
+        <div className="flex flex-col gap-5 lg:gap-[42px] h-full w-full bg-[#0F0F0F] dark:bg-[#0577FF] px-6 pt-5 pb-10 lg:pt-[15px] lg:pb-[50px] lg:px-10 max-lg:col-span-3 text-white">
           <i className="effortless-icon size-[35px] lg:size-[60px] text-white" />
           <div className="flex flex-col gap-[14px] lg:gap-7">
             <h4 className="text-lg lg:text-[26px]/[30px] font-bold">
@@ -67,13 +67,13 @@ const Features: React.FC<FeaturesProps> = ({ hideContact }) => {
       >
         <Link
           href="/contact"
-          className="text-lg text-white bg-black w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out"
+          className="text-lg text-white bg-black w-[170px] dark:bg-white dark:text-black h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out"
         >
           Contact Us
         </Link>
         <Link
           href="/services"
-          className="text-lg text-black bg-white w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center border border-black hover:text-white hover:border-primary-blue hover:bg-primary-blue transition-all duration-300 ease-in-out"
+          className="text-lg text-black bg-white dark:bg-black dark:text-white dark:border dark:border-white w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center border border-black hover:text-white hover:border-primary-blue hover:bg-primary-blue transition-all duration-300 ease-in-out"
         >
           Our Services
         </Link>

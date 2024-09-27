@@ -37,7 +37,7 @@ const Page = () => {
       </ScrollReveal>
 
       <ScrollReveal>
-        <div className="bg-black h-full flex flex-row max-lg:flex-col-reverse items-center gap-5 lg:gap-[100px] pt-5 mt-[50px] lg:mt-[100px]">
+        <div className="bg-black dark:bg-[#121B26] h-full flex flex-row max-lg:flex-col-reverse items-center gap-5 lg:gap-[100px] pt-5 mt-[50px] lg:mt-[100px] lg:justify-between lg:pr-[150px]">
           <Image
             src="/images/help-image.svg"
             width={1000}
@@ -51,7 +51,7 @@ const Page = () => {
               <br />
               <span className="text-primary-blue">
                 Talk to our experts
-                <br /> today.
+                <br className="min-[1500px]:hidden" /> today.
               </span>
             </h5>
             <Link

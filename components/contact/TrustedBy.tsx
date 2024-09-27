@@ -78,7 +78,7 @@ const TrustedBy = () => {
   return (
     <div className="w-full flex flex-col gap-5 lg:gap-[34px] items-center justify-center overflow-hidden mb-[50px] lg:mb-[100px]">
       <div className="flex flex-col gap-1.5 lg:gap-4 items-center justify-center">
-        <h2 className="text-center text-lg max-lg:text-xs font-medium text-black">
+        <h2 className="text-center text-lg max-lg:text-xs font-medium text-black dark:text-white">
           Don&apos;t just take our word for it
         </h2>
         <p className="text-xl font-bold text-center max-lg:text-sm">

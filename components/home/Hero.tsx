@@ -21,13 +21,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-5 lg:mt-[58px] w-full sm:w-auto">
           <Link
             href="/contact"
-            className="text-base lg:text-lg text-white bg-black w-full sm:w-[170px] h-[50px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out"
+            className="text-base lg:text-lg text-white bg-black dark:bg-white dark:text-black w-full sm:w-[170px] h-[50px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out"
           >
             Contact Us
           </Link>
           <Link
             href="/services"
-            className="text-base lg:text-lg text-black bg-white w-full sm:w-[170px] h-[50px] lg:h-[75px] rounded-none font-bold flex items-center justify-center border border-black hover:text-white hover:border-primary-blue hover:bg-primary-blue transition-all duration-300 ease-in-out"
+            className="text-base lg:text-lg text-black bg-white dark:bg-black dark:text-white dark:border dark:border-white w-full sm:w-[170px] h-[50px] lg:h-[75px] rounded-none font-bold flex items-center justify-center border border-black hover:text-white hover:border-primary-blue hover:bg-primary-blue transition-all duration-300 ease-in-out"
           >
             Our Services
           </Link>

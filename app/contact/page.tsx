@@ -23,7 +23,7 @@ const Page = () => {
             <h1 className="text-[50px]/[60px] max-lg:text-2xl font-bold text-center">
               Contact us
             </h1>
-            <p className="text-lg max-lg:text-sm font-medium text-active-text text-center">
+            <p className="text-lg max-lg:text-sm font-medium text-active-text text-center dark:text-white/60">
               Interested in working with our talented team? Reach out to us to
               discover how we can collaborate effectively and bring your ideas
               into reality.
@@ -36,10 +36,10 @@ const Page = () => {
 
       <ScrollReveal>
         <div className="px-5 lg:px-[150px] mb-[50px] lg:mb-[100px] flex items-center justify-between max-lg:flex-col max-lg:gap-[10px]">
-          <div className="py-3 lg:p-6 flex flex-row max-lg:items-center max-lg: justify-center gap-2.5 border-2 border-black w-full lg:w-fit">
-            <i className="email-button-icon size-7 lg:size-[50px] shrink-0 text-black" />
+          <div className="py-3 lg:p-6 flex flex-row max-lg:items-center max-lg: justify-center gap-2.5 border-2 border-black dark:border-white w-full lg:w-fit">
+            <i className="email-button-icon size-7 lg:size-[50px] shrink-0 text-black dark:text-white" />
             <div className="flex flex-col">
-              <h3 className="text-lg max-lg:text-xs font-bold text-active-text mb-[3px]">
+              <h3 className="text-lg max-lg:text-xs font-bold text-active-text mb-[3px] dark:text-white/60">
                 You Can Also Reach Us At
               </h3>
               <p className="text-lg max-lg:text-xs font-bold">
@@ -47,11 +47,11 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="py-3 lg:p-6 flex flex-row max-lg:items-center max-lg: justify-center gap-2.5 border-2 border-black w-full lg:w-fit">
+          <div className="py-3 lg:p-6 flex flex-row max-lg:items-center max-lg: justify-center gap-2.5 border-2 border-black dark:border-white w-full lg:w-fit">
             <i className="phone-button-icon size-[50px] shrink-0 max-lg:hidden" />
             <i className="phone-icon-mb size-7 shrink-0 lg:hidden" />
             <div className="flex flex-col">
-              <h3 className="text-lg max-lg:text-xs font-bold text-active-text mb-[3px]">
+              <h3 className="text-lg max-lg:text-xs font-bold text-active-text mb-[3px] dark:text-white/60">
                 What to join our Team ?
               </h3>
               <p className="text-lg max-lg:text-xs font-bold">
@@ -68,12 +68,12 @@ const Page = () => {
 
       <ScrollReveal>
         <div className="px-5 lg:px-[150px]">
-          <div className="py-10 lg:py-[50px] px-6 max-lg:px-3 bg-[#FAFAFA]">
+          <div className="py-10 lg:py-[50px] px-6 max-lg:px-3 bg-[#FAFAFA] dark:bg-[#121B26]">
             <div className="flex flex-col items-center justify-center gap-[25px] mb-8 lg:mb-[68px]">
               <h2 className="text-xl lg:text-[40px]/[48px] font-bold text-center">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xs lg:text-lg font-medium text-active-text text-center max-w-[860px]">
+              <p className="text-xs lg:text-lg font-medium text-active-text text-center max-w-[860px] dark:text-white/60">
                 Cras tincidunt lobortis feugiat vivamus at morbi leo urna
                 molestie atole elementum eu facilisis faucibus interdum posuere.
               </p>
