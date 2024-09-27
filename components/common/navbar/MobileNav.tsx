@@ -26,8 +26,8 @@ export default function MobileNav() {
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild className="lg:hidden">
-        <i className="menu-icon w-[28px] h-[19px] shrink-0" />
+      <SheetTrigger asChild className="lg:!hidden">
+        <i className="menu-icon w-[28px] h-[19px] shrink-0 lg:!hidden text-black dark:text-white" />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 gap-0 w-full">
         <div className="h-[70px] flex items-center justify-between pl-[30px] pr-6">
@@ -50,9 +50,7 @@ export default function MobileNav() {
                     Icon={ChevronDown}
                     className={cn(
                       "text-base font-semibold w-fit justify-center py-2 pl-5 [&[data-state=open]>svg]:rotate-180",
-                      pathname.startsWith(item.url)
-                        ? "text-primary-blue"
-                        : "text-black"
+                      pathname.startsWith(item.url) ? "text-primary-blue" : ""
                     )}
                   >
                     {item.text}
@@ -63,7 +61,7 @@ export default function MobileNav() {
                         <Link
                           key={index}
                           href={service.url}
-                          className="text-sm font-medium text-gray-600 hover:text-primary-blue text-center"
+                          className="text-sm font-medium text-gray-600 hover:text-primary-blue text-center dark:text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           {service.text}
@@ -79,7 +77,7 @@ export default function MobileNav() {
                 href={item.url}
                 className={cn(
                   "text-base font-semibold w-full text-center py-2",
-                  pathname === item.url ? "text-primary-blue" : "text-black"
+                  pathname === item.url ? "text-primary-blue" : ""
                 )}
                 onClick={() => setIsOpen(false)}
               >
@@ -89,7 +87,7 @@ export default function MobileNav() {
           )}
           <Link
             href="/contact"
-            className="text-lg max-lg:text-base text-white bg-black w-full h-[50px] rounded-none font-bold flex items-center justify-center"
+            className="text-lg max-lg:text-base text-white bg-black dark:bg-white dark:text-black w-full h-[50px] rounded-none font-bold flex items-center justify-center"
             onClick={() => setIsOpen(false)}
           >
             Contact Us
