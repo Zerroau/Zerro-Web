@@ -11,8 +11,8 @@ export default function Hero() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#000B18] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#b4b4b4)]" />
 
       <h1 className="text-2xl leading-[33px] lg:text-[50px]/[60px] lg:leading-[72.61px] font-bold mb-5 lg:mb-[30px] whitespace-normal lg:whitespace-nowrap text-center z-50">
-        We build world&apos;s finest software <br /> with{" "}
-        <span className="text-primary-blue">passion and expertise.</span>
+        We build world&apos;s finest software <br className="max-md:hidden" />{" "}
+        with <span className="text-primary-blue">passion and expertise.</span>
       </h1>
       <p className="text-sm sm:text-base lg:text-lg font-medium text-active-text max-w-[486px] text-center z-50">
         We work with businesses of all sizes, from startups to Industry leaders,

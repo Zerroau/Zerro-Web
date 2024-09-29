@@ -127,7 +127,7 @@ const Footer = () => {
 
       <div className="w-full flex items-center justify-center mt-8 max-lg:mt-[46px]">
         <p className="text-lg max-lg:text-xs font-bold text-center">
-          2024 - © Zerro.All rightrs reseved.
+          2024 - © Zerro.All rights reserved.
         </p>
       </div>
     </footer>
