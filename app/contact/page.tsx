@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import Image from "next/image";
+
 import ContactForm from "@/components/contact/ContactForm";
 import TrustedBy from "@/components/contact/TrustedBy";
 import {
@@ -10,7 +12,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Image from "next/image";
 import { Mail, Plus } from "lucide-react";
 import ScrollReveal from "@/components/common/ScrollReveal";
 

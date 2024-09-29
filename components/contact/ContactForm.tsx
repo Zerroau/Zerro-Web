@@ -244,7 +244,7 @@ const ContactForm = () => {
           <AnimatedButton
             type="submit"
             disabled={form.formState.isSubmitting}
-            className="text-lg max-lg:text-xs text-white bg-black dark:bg-white dark:text-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold flex items-center justify-center"
+            className="text-lg max-lg:text-xs text-white bg-black dark:bg-white dark:text-black w-full h-[50px] lg:w-[170px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue hover:text-white"
           >
             {form.formState.isSubmitting ? (
               <Loader2 className="size-8 animate-spin" />
