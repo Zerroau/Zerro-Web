@@ -136,7 +136,7 @@ const ContactForm = () => {
                 <AnimatedInput
                   placeholder="Name"
                   {...field}
-                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0 }}
@@ -159,7 +159,7 @@ const ContactForm = () => {
                 <AnimatedInput
                   placeholder="Email"
                   {...field}
-                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -182,7 +182,7 @@ const ContactForm = () => {
                 <AnimatedInput
                   placeholder="Phone"
                   {...field}
-                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
@@ -206,7 +206,7 @@ const ContactForm = () => {
                 <AnimatedInput
                   placeholder="Company"
                   {...field}
-                  className="border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
+                  className="rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs max-lg:text-xs placeholder:font-normal h-[45px] lg:h-[58px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
@@ -228,7 +228,7 @@ const ContactForm = () => {
               <FormControl>
                 <AnimatedTextarea
                   placeholder="Please type your message here..."
-                  className="resize-none max-lg:text-xs h-[200px] lg:h-[236px] border-2 border-black dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs placeholder:font-normal"
+                  className="resize-none max-lg:text-xs h-[200px] lg:h-[236px] dark:border-white rounded-none placeholder:text-[#0F0F0F] dark:placeholder:text-white placeholder:text-lg max-lg:placeholder:text-xs placeholder:font-normal"
                   {...field}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

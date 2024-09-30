@@ -63,6 +63,7 @@ export default function MobileNav() {
                           href={service.url}
                           className="text-sm font-medium text-gray-600 hover:text-primary-blue text-center dark:text-white"
                           onClick={() => setIsOpen(false)}
+                          prefetch={false}
                         >
                           {service.text}
                         </Link>
@@ -80,6 +81,7 @@ export default function MobileNav() {
                   pathname === item.url ? "text-primary-blue" : ""
                 )}
                 onClick={() => setIsOpen(false)}
+                prefetch={false}
               >
                 {item.text}
               </Link>
@@ -89,6 +91,7 @@ export default function MobileNav() {
             href="/contact"
             className="text-lg max-lg:text-base text-white bg-black dark:bg-white dark:text-black w-full h-[50px] rounded-none font-bold flex items-center justify-center"
             onClick={() => setIsOpen(false)}
+            prefetch={false}
           >
             Contact Us
           </Link>
