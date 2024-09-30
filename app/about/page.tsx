@@ -9,7 +9,9 @@ import ScrollReveal from "@/components/common/ScrollReveal";
 
 export const metadata: Metadata = {
   title:
-    "About Zerro | Australia’s Fast-Growing Technology Company Delivering Innovationand Excellence in Tech Solutions",
+    "About Zerro | Australia’s Fast-Growing Technology Company Delivering Innovation and Excellence in Tech Solutions",
+  description:
+    "Discover Zerro, Australia’s trusted software development company. We build cutting-edge digital solutions that transform businesses, backed by years of experience and a client-focused approach.",
 };
 
 const Page = () => {

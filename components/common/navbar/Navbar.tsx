@@ -16,6 +16,7 @@ const Navbar = () => {
           <Link
             href="/contact"
             className="text-lg text-white bg-black dark:bg-white dark:text-black w-[170px] h-[75px] rounded-none font-bold flex items-center justify-center max-lg:hidden hover:bg-primary-blue transition-all duration-300 ease-in-out"
+            prefetch={false}
           >
             Contact Us
           </Link>

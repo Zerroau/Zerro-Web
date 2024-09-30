@@ -13,7 +13,7 @@ const Logo = ({
   footer?: boolean;
 }) => {
   return (
-    <Link href="/">
+    <Link href="/" prefetch={false}>
       <Image
         src={footer ? "/images/logo-footer.png" : "/images/logo.png"}
         alt="Logo"

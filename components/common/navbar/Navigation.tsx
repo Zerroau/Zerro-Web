@@ -34,6 +34,7 @@ export default function Navigation() {
                 )}
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
+                prefetch={false}
               >
                 {item.text} <ChevronDown className="ml-2 h-4 w-4" />
               </Link>
@@ -45,7 +46,7 @@ export default function Navigation() {
             >
               {serviceItems.map((service, index) => (
                 <DropdownMenuItem key={index} asChild>
-                  <Link href={service.url} className="w-full">
+                  <Link href={service.url} className="w-full" prefetch={false}>
                     {service.text}
                   </Link>
                 </DropdownMenuItem>
@@ -60,6 +61,7 @@ export default function Navigation() {
               "text-lg font-medium px-4 py-2.5 transition-transform duration-300 ease-in-out hover:scale-110",
               pathname === item.url ? "text-primary-blue" : ""
             )}
+            prefetch={false}
           >
             {item.text}
           </Link>
