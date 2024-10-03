@@ -22,7 +22,7 @@ export const navData = [
   {
     id: 5,
     text: "Careers",
-    url: "/contact",
+    url: "/careers",
   },
 ];
 
