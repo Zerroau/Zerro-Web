@@ -87,3 +87,54 @@ export const valuesData = [
       "Life’s too short for arrogance. We value respect, humility, and positive relationships in all our interactions.",
   },
 ];
+
+export const openingsData = [
+  {
+    id: 1,
+    title: "Front End Developer",
+    description:
+      "A front-end developer creates visually engaging websites and applications using HTML, CSS, and JavaScript, ensuring a seamless user experience across devices.",
+    salary: "$115,000",
+    jobType: "Full time",
+  },
+  {
+    id: 2,
+    title: "Back End Developer",
+    description:
+      "A back-end developer creates and maintains server-side components, focusing on databases, server logic, and APIs to ensure efficient and secure data processing for applications.",
+    salary: "$125,000",
+    jobType: "Full time",
+  },
+  {
+    id: 3,
+    title: "Mobile Application Developer",
+    description:
+      "A mobile application developer creates apps for smartphones and tablets using languages like Swift or Kotlin, focusing on user-friendly interfaces and optimal performance across devices.",
+    salary: "$130,000",
+    jobType: "Full time",
+  },
+  {
+    id: 4,
+    title: "UI/UX Designer",
+    description:
+      "A UI/UX designer enhances user satisfaction by improving application usability and accessibility, creating appealing interfaces, and conducting user research for a seamless experience.",
+    salary: "$97,000",
+    jobType: "Full time",
+  },
+  {
+    id: 5,
+    title: "DevOps Engineer",
+    description:
+      "A DevOps engineer automates processes to streamline development and operations, focusing on continuous integration and delivery to optimize infrastructure and improve system reliability.",
+    salary: "$135,000",
+    jobType: "Full time",
+  },
+  {
+    id: 6,
+    title: "Technical Lead",
+    description:
+      "A technical lead oversees project architecture and guides development teams, ensuring best practices in coding and design while mentoring members and driving technical decisions for quality software delivery.",
+    salary: "$155,000",
+    jobType: "Full time",
+  },
+];
