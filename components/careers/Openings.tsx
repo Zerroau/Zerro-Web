@@ -1,8 +1,17 @@
+"use client";
+
 import React from "react";
 import { Button } from "../ui/button";
 import { openingsData } from "./data";
 
 const Openings = () => {
+  const handleApply = (subject: string) => {
+    const mailtoLink = `mailto:careers@zerro.com.au?subject=${subject}`;
+    const a = document.createElement("a");
+    a.href = mailtoLink;
+    a.target = "_blank";
+    a.click();
+  };
   return (
     <div className="bg-[#0F0F0F] px-5 lg:px-[120px] flex flex-col gap-[26px] lg:gap-[46px] items-center py-[50px] lg:py-[100px] mb-[50px]">
       <div className="flex flex-col gap-4 lg:gap-[26px] items-center justify-center">
@@ -30,7 +39,10 @@ const Openings = () => {
               <span>Salary : {data.salary}</span>
               <span>Job Type : {data.jobType}</span>
             </div>
-            <Button className="text-lg lg:text-lg text-white bg-[#0F0F0F] dark:text-white dark:bg-[#0F0F0F] w-full h-[60px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out lg:w-[170px]">
+            <Button
+              onClick={() => handleApply(data.title)}
+              className="text-lg lg:text-lg text-white bg-[#0F0F0F] dark:text-white dark:bg-[#0F0F0F] w-full h-[60px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out lg:w-[170px]"
+            >
               Apply Now
             </Button>
           </div>
