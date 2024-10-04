@@ -5,6 +5,7 @@ import WhyJoin from "@/components/careers/WhyJoin";
 import Values from "@/components/careers/Values";
 import InterviewProcess from "@/components/careers/InterviewProcess";
 import ScrollReveal from "@/components/common/ScrollReveal";
+import Openings from "@/components/careers/Openings";
 
 const Page = () => {
   return (
@@ -23,6 +24,10 @@ const Page = () => {
 
       <ScrollReveal>
         <InterviewProcess />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <Openings />
       </ScrollReveal>
     </div>
   );
