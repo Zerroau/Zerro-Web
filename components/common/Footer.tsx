@@ -31,33 +31,36 @@ const Footer = () => {
             <span className="text-lg font-bold">Follow us on social media</span>
 
             <div className="flex flex-row gap-[15px]">
-              <a
+              <Link
                 href="https://www.linkedin.com/company/zerroau/"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="lnkedin-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.facebook.com/profile.php?id=61564861119135&mibextid=LQQJ4d"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="fb-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a href="#" className="text-white flex">
+              </Link>
+              <Link href="#" className="text-white flex" prefetch={false}>
                 <i className="x-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/zerro_au?igsh=cnd1OHJyMmV1OWpj&utm_source=q"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="insta-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a href="#" className="text-white flex">
+              </Link>
+              <Link href="#" className="text-white flex" prefetch={false}>
                 <i className="yt-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -76,33 +79,36 @@ const Footer = () => {
             </span>
 
             <div className="flex flex-row gap-[15px]">
-              <a
+              <Link
                 href="https://www.linkedin.com/company/zerroau/"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="lnkedin-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.facebook.com/profile.php?id=61564861119135&mibextid=LQQJ4d"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="fb-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a href="#" className="text-white flex">
+              </Link>
+              <Link href="#" className="text-white flex">
                 <i className="x-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/zerro_au?igsh=cnd1OHJyMmV1OWpj&utm_source=q"
                 target="_blank"
                 className="text-white flex"
+                prefetch={false}
               >
                 <i className="insta-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
-              <a href="#" className="text-white flex">
+              </Link>
+              <Link href="#" className="text-white flex" prefetch={false}>
                 <i className="yt-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
