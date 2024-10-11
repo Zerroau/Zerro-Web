@@ -15,7 +15,7 @@ const Logo = ({
   return (
     <Link href="/" prefetch={false}>
       <Image
-        src={footer ? "/images/logo-footer.png" : "/images/logo.png"}
+        src={footer ? "/images/logo-footer-new.png" : "/images/logo-new.png"}
         alt="Logo"
         width={500}
         height={500}
