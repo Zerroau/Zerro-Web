@@ -26,7 +26,8 @@ export default function MobileNav() {
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild className="lg:!hidden">
+      <SheetTrigger className="lg:!hidden">
+        <span className="sr-only">Menu</span>
         <i className="menu-icon w-[28px] h-[19px] shrink-0 lg:!hidden text-black dark:text-white" />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 gap-0 w-full">

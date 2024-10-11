@@ -37,6 +37,8 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Linkedin</span>
+
                 <i className="lnkedin-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link
@@ -45,9 +47,12 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Facebook</span>
                 <i className="fb-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link href="#" className="text-white flex" prefetch={false}>
+                <span className="sr-only">Twitter</span>
+
                 <i className="x-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link
@@ -56,9 +61,13 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Instagram</span>
+
                 <i className="insta-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link href="#" className="text-white flex" prefetch={false}>
+                <span className="sr-only">Youtube</span>
+
                 <i className="yt-icon size-[35px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
             </div>
@@ -85,6 +94,8 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Linkedin</span>
+
                 <i className="lnkedin-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link
@@ -93,9 +104,13 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Facebook</span>
+
                 <i className="fb-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link href="#" className="text-white flex">
+                <span className="sr-only">Twitter</span>
+
                 <i className="x-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link
@@ -104,9 +119,13 @@ const Footer = () => {
                 className="text-white flex"
                 prefetch={false}
               >
+                <span className="sr-only">Instagram</span>
+
                 <i className="insta-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
               <Link href="#" className="text-white flex" prefetch={false}>
+                <span className="sr-only">Youtube</span>
+
                 <i className="yt-icon size-[30px] shrink-0 hover:bg-primary-blue"></i>
               </Link>
             </div>
