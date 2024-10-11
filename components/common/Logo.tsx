@@ -23,6 +23,7 @@ const Logo = ({
           "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 dark:hidden",
           className
         )}
+        priority
       />
       <Image
         src={"/images/logo-footer.png"}
@@ -33,6 +34,7 @@ const Logo = ({
           "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 hidden dark:block",
           className
         )}
+        priority
       />
     </Link>
   );
