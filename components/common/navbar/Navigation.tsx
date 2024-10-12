@@ -30,7 +30,9 @@ export default function Navigation() {
                 href={item.url}
                 className={cn(
                   "text-lg font-medium px-4 py-2.5 transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-transparent flex items-center",
-                  pathname.startsWith(item.url) ? "text-primary-blue" : ""
+                  pathname.startsWith(item.url)
+                    ? "text-primary-blue font-bold"
+                    : ""
                 )}
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
@@ -59,7 +61,7 @@ export default function Navigation() {
             href={item.url}
             className={cn(
               "text-lg font-medium px-4 py-2.5 transition-transform duration-300 ease-in-out hover:scale-110",
-              pathname === item.url ? "text-primary-blue" : ""
+              pathname === item.url ? "text-primary-blue font-bold" : ""
             )}
             prefetch={false}
           >
