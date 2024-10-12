@@ -12,9 +12,7 @@ const Testimonials = dynamic(() => import("@/components/home/Testimonials"));
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <ScrollReveal>
-        <Hero />
-      </ScrollReveal>
+      <Hero />
 
       <ScrollReveal>
         <TrustedBy />

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const LogoNav = ({ className }: { className?: string }) => {
   return (
-    <Link href="/" prefetch={false}>
+    <Link href="/">
       <Image
         src={"/images/logo-new.png"}
         alt="Logo"
@@ -17,6 +17,7 @@ const LogoNav = ({ className }: { className?: string }) => {
           "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 dark:hidden",
           className
         )}
+        fetchPriority="high"
       />
       <Image
         src={"/images/logo-footer.png"}
@@ -27,6 +28,7 @@ const LogoNav = ({ className }: { className?: string }) => {
           "w-[147px] h-[33px] shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 hidden dark:block",
           className
         )}
+        fetchPriority="high"
       />
     </Link>
   );
