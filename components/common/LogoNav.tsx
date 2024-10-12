@@ -20,7 +20,7 @@ const LogoNav = ({ className }: { className?: string }) => {
         fetchPriority="high"
       />
       <Image
-        src={"/images/logo-footer.png"}
+        src={"/images/logo-footer-new.png"}
         alt="Logo"
         width={500}
         height={500}

@@ -1,8 +1,9 @@
 import dynamic from "next/dynamic";
 
-const ScrollReveal = dynamic(() => import("@/components/common/ScrollReveal"));
-const Hero = dynamic(() => import("@/components/home/Hero"));
-const TrustedBy = dynamic(() => import("@/components/home/TrustedBy"));
+import ScrollReveal from "@/components/common/ScrollReveal";
+import Hero from "@/components/home/Hero";
+import TrustedBy from "@/components/home/TrustedBy";
+
 const About = dynamic(() => import("@/components/home/About"));
 const Features = dynamic(() => import("@/components/home/Features"));
 const Technologies = dynamic(() => import("@/components/home/Technologies"));
@@ -14,9 +15,7 @@ export default function Home() {
     <main className="flex flex-col">
       <Hero />
 
-      <ScrollReveal>
-        <TrustedBy />
-      </ScrollReveal>
+      <TrustedBy />
 
       <ScrollReveal>
         <About />
