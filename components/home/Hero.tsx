@@ -21,6 +21,7 @@ export default function Hero() {
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-5 lg:mt-[35px] w-full sm:w-auto">
         <Link
+          prefetch={false}
           href="/contact"
           className="text-base lg:text-lg text-white bg-black dark:bg-white dark:text-black w-full sm:w-[170px] h-[50px] lg:h-[75px] rounded-none font-bold flex items-center justify-center hover:bg-primary-blue transition-all duration-300 ease-in-out z-50"
         >
