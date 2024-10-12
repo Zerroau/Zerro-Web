@@ -6,28 +6,28 @@ import Image from "next/image";
 
 const logos = [
   {
-    url: "/images/trusted/1.svg",
+    url: "/images/trusted/1.png",
     alt: "Brand logo 1",
     height: 500,
     width: 500,
     className: "object-contain shrink-0 size-[54px] lg:size-[130px]",
   },
   {
-    url: "/images/trusted/2.svg",
+    url: "/images/trusted/2.png",
     alt: "Brand logo 2",
     height: 500,
     width: 500,
     className: "object-contain shrink-0 w-[27px] h-6 lg:w-[64px] lg:h-[60px]",
   },
   {
-    url: "/images/trusted/3.svg",
+    url: "/images/trusted/3.png",
     alt: "Brand logo 3",
     height: 500,
     width: 500,
     className: "object-contain shrink-0 w-[26px] h-[24px] lg:size-[60px]",
   },
   {
-    url: "/images/trusted/4.svg",
+    url: "/images/trusted/4.png",
     alt: "Brand logo 4",
     height: 41,
     width: 160,
@@ -35,14 +35,14 @@ const logos = [
       "object-contain shrink-0 w-[67px] h-[14px] lg:w-[130px] lg:h-[41px]",
   },
   {
-    url: "/images/trusted/5.svg",
+    url: "/images/trusted/5.png",
     alt: "Brand logo 5",
     height: 500,
     width: 500,
     className: "object-contain shrink-0 w-[27px] h-[24px] lg:size-[60px]",
   },
   {
-    url: "/images/trusted/6.svg",
+    url: "/images/trusted/6.png",
     alt: "Brand logo 6",
     height: 500,
     width: 500,
@@ -50,7 +50,7 @@ const logos = [
       "object-contain shrink-0 w-[60px] h-[18px] lg:w-[145px] lg:h-[48px]",
   },
   {
-    url: "/images/trusted/7.svg",
+    url: "/images/trusted/7.png",
     alt: "Brand logo 7",
     height: 500,
     width: 500,
@@ -58,7 +58,7 @@ const logos = [
       "object-contain shrink-0 w-[43px] h-[24px] lg:w-[97px] lg:h-[60px]",
   },
   {
-    url: "/images/trusted/8.svg",
+    url: "/images/trusted/8.png",
     alt: "Brand logo 8",
     height: 500,
     width: 500,
