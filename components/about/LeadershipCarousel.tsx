@@ -86,7 +86,7 @@ export default function LeadershipCarousel() {
                       width={500}
                       height={500}
                       alt={data.name}
-                      className="size-[120px] lg:size-[214px] object-contain"
+                      className="size-[120px] lg:size-[214px] object-cover"
                     />
                     <span className="font-bold text-2xl mt-[14px]">
                       {data.name}

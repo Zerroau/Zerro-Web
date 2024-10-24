@@ -53,14 +53,14 @@ const TrustedBy = () => {
       className:
         "object-contain shrink-0 w-[60px] h-[18px] lg:w-[145px] lg:h-[48px]",
     },
-    {
-      url: "/images/trusted/7.svg",
-      alt: "Brand logo 7",
-      height: 500,
-      width: 500,
-      className:
-        "object-contain shrink-0 w-[43px] h-[24px] lg:w-[97px] lg:h-[60px]",
-    },
+    // {
+    //   url: "/images/trusted/7.svg",
+    //   alt: "Brand logo 7",
+    //   height: 500,
+    //   width: 500,
+    //   className:
+    //     "object-contain shrink-0 w-[43px] h-[24px] lg:w-[97px] lg:h-[60px]",
+    // },
     {
       url: "/images/trusted/8.svg",
       alt: "Brand logo 8",
