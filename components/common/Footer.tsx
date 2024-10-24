@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import { Button } from "../ui/button";
 import { navData } from "./navbar/nav-data";
 import Link from "next/link";
 import NewsLetter from "./NewsLetter";

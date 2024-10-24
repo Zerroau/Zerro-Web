@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center w-full dark:bg-[#000B18] bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-[#000B18]/[0.2] lg:dark:bg-grid-white/[0.2] lg:bg-grid-[#000B18]/[0.2] relative pt-[50px] pb-[70px] lg:pt-[137px] lg:pb-[146px]  px-5 lg:px-[150px]">
+    <div className="flex flex-col items-center w-full dark:bg-[#000B18] bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-[#000B18]/[0.2] lg:dark:bg-grid-white/[0.2] lg:bg-grid-[#000B18]/[0.2] relative pt-[50px] pb-[70px] lg:pt-[137px] lg:pb-[146px]  px-5 lg:px-[150px] antialiased">
       <div className="bg-gradient-to-t from-white/10 to-white dark:from-[#000B18]/20 dark:to-[#000B18] h-[90px] w-full absolute top-0 max-lg:h-[50px]" />
       <div className="bg-gradient-to-b from-white/10 to-white dark:from-[#000B18]/20 dark:to-[#000B18] h-[90px] w-full absolute bottom-0 max-lg:h-[50px]" />
       <div className="bg-gradient-to-l from-white/10 to-white dark:from-[#000B18]/20 dark:to-[#000B18] w-1/4 h-full absolute left-0 top-0 max-[1400px]:hidden max-lg:block max-md:max-w-[50px]" />
