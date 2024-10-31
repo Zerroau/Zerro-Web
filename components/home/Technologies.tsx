@@ -38,7 +38,7 @@ const tabs = [
 
 const Technologies = () => {
   return (
-    <div className="px-5 lg:px-[150px] flex flex-col items-center justify-center gap-[26px] lg:gap-[70px] mt-[50px] lg:mt-[100px]">
+    <div className="px-5 lg:px-[150px] flex flex-col items-center justify-center gap-[26px] lg:gap-[70px] mt-[50px] lg:mt-[65px]">
       <div className="flex flex-col items-center gap-5 lg:gap-[26px]">
         <h2 className="text-[28px]/[33px] lg:text-[40px]/[48px] font-bold text-center max-lg:hidden">
           <span className="text-primary-blue"> 35+ Experts</span>, Proficient in
@@ -81,9 +81,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
@@ -105,9 +106,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
@@ -129,9 +131,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
@@ -153,9 +156,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
@@ -177,9 +181,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">
@@ -201,9 +206,10 @@ const Technologies = () => {
                 <Image
                   src={tech.url}
                   alt={tech.title}
-                  width={100}
-                  height={100}
+                  width={65}
+                  height={65}
                   className="size-7 lg:size-[65px] object-contain"
+                  quality={50}
                 />
               </div>
               <p className="text-xl max-lg:text-[10px]/[12px] font-bold text-center">

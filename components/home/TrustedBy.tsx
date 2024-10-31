@@ -107,6 +107,7 @@ const TrustedBy = () => {
                 width={logo.width}
                 height={logo.height}
                 className={logo.className}
+                quality={50}
               />
             </div>
           ))}
