@@ -74,9 +74,10 @@ const Testimonials = () => {
       <Image
         src="/images/testimonials.png"
         alt="Testimonial"
-        width={2500}
-        height={1500}
+        width={1920}
+        height={1080}
         className="w-full object-contain h-auto"
+        quality={50}
       />
     </div>
   );
